@@ -1,7 +1,7 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190710160742553.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xiMjQ1NTU3NDcy,size_16,color_FFFFFF,t_70)
 ##### 简介
 [Zalenium](https://opensource.zalando.com/zalenium/) 是一个Selenium Grid的扩展，它使用[docker-selenium](https://github.com/elgalu/docker-selenium)在本地运行基于Firefox和Chrome的测试，同样带有视频录制，实时预览，基本认证和仪表盘等功能；如果需要其他的浏览器，则需要用到云测试提供商（Sauce Labs，BrowserStack，TestingBot），当然这些是收费的。。。不过好在Firefox和Chrome是开源的，基本已经够用了。 Zalenium也可以在Kubernetes中使用。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190712135607766.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xiMjQ1NTU3NDcy,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190712152405559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xiMjQ1NTU3NDcy,size_16,color_FFFFFF,t_70)
 ##### 安装
 ###### 前置条件
 - [Docker](https://docs.docker.com/docker-for-windows/) version >= 1.11.1（可能适用于低版本，没有测试过）
@@ -53,11 +53,11 @@ docker run --rm -ti --name zalenium -p 4444:4444 -v /var/run/docker.sock:/var/ru
 然后你将会看到：
 
 - 命令行窗口
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190712140257501.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xiMjQ1NTU3NDcy,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190712152628693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xiMjQ1NTU3NDcy,size_16,color_FFFFFF,t_70)
 - Grid: http://localhost:4444/grid/console
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190712140856830.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xiMjQ1NTU3NDcy,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190712152729241.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xiMjQ1NTU3NDcy,size_16,color_FFFFFF,t_70)
 - 实时预览：http://localhost:4444/grid/admin/live，可以增加 `?refresh=numberOfSeconds`，自动刷新页面，例如：http://localhost:4444/grid/admin/live?refresh=20；`?build=myTestBuild`，查看单个构建，例如：http://localhost:4444/grid/admin/live?build=myTestBuild
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190712140925516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xiMjQ1NTU3NDcy,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019071215284155.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xiMjQ1NTU3NDcy,size_16,color_FFFFFF,t_70)
 - Dashboard：http://localhost:4444/dashboard/#
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190712141002389.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xiMjQ1NTU3NDcy,size_16,color_FFFFFF,t_70)
 
