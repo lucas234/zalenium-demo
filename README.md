@@ -248,6 +248,7 @@ for i in threads:
 - GitHub： https://github.com/zalando/zalenium
 - 官网：https://opensource.zalando.com/zalenium/
 - docker-selenium 录屏：https://github.com/elgalu/docker-selenium/blob/master/docs/videos.md
+- 实时预览集成jenkins：http://www.testautomationguru.com/embedding-zalenium-live-execution-in-jenkins/
 - https://devopsqa.wordpress.com/2018/11/20/zalenium-docker-selenium-grid/
 - https://dev.to/bufferings/tried-zalenium-to-run-selenium-tests-on-scalable-containers-2n7c
 - http://www.testautomationguru.com/selenium-webdriver-disposable-selenium-grid-infrastructure-setup-using-zalenium/
