@@ -1,6 +1,7 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190710160742553.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xiMjQ1NTU3NDcy,size_16,color_FFFFFF,t_70)
 ##### 简介
-[Zalenium](https://opensource.zalando.com/zalenium/) 是一个Selenium Grid的扩展，它使用[docker-selenium](https://github.com/elgalu/docker-selenium)在本地运行基于Firefox和Chrome的测试，同样带有视频录制，实时预览，基本认证和仪表盘等功能；如果需要其他的浏览器，则需要用到云测试提供商（Sauce Labs，BrowserStack，TestingBot），当然这些是收费的。。。不过好在Firefox和Chrome是开源的，基本已经够用了。 Zalenium也可以在Kubernetes中使用。
+[Zalenium](https://opensource.zalando.com/zalenium/) 是一个Selenium Grid的扩展，它使用[docker-selenium](https://github.com/elgalu/docker-selenium)在本地运行基于Firefox和Chrome的测试，同样带有视频录制，实时预览，基本认证和仪表盘等功能；如果需要其他的浏览器，则需要用到云测试提供商（Sauce Labs，BrowserStack，TestingBot），当然这些是收费的。。。不过好在Firefox和Chrome是开源的，基本已经够用了； Zalenium也可以在Kubernetes中使用。
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190712152405559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xiMjQ1NTU3NDcy,size_16,color_FFFFFF,t_70)
 ##### 安装
 ###### 前置条件
